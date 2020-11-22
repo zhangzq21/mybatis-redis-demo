@@ -53,5 +53,7 @@ public class SeckillController {
 //            //释放锁
 //            lock.unlock();
 //        }
+
+        log.info("创建dev分支");
     }
 }
