@@ -56,5 +56,6 @@ public class SeckillController {
 
         log.info("创建dev分支");
         log.info("test");
+        log.info("冲突test");
     }
 }
