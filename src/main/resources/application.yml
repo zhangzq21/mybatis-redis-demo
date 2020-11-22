@@ -1,0 +1,30 @@
+# 应用名称
+spring:
+  application:
+    name: mybatis-plus_demo
+  #  cloud:
+  #    nacos:
+  #      discovery:
+  #        server-addr: 127.0.0.1:8848
+  # 数据库连接
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis-plus?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  redis:
+    host: 47.100.2.208
+    password: Qq2889144
+
+  #配置日志输出级别
+
+logging:
+  level:
+    com.zhang.mytatisplus_demo: debug
+    #配置mybatisPLUS：告诉MP自己定义的xml映射文件的路径
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto #指定全局的主键id生成规则：auto：自增
+server:
+  port: 80
